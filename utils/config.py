@@ -545,6 +545,24 @@ class AppConfig:
                 aliyun_captcha=False,
                 bypass_method=None,
             ),
+            "muyuan": ProviderConfig(
+                name="muyuan",
+                origin="https://newapi.linuxdo.edu.rs",
+                login_path="/login",
+                status_path="/api/status",
+                auth_state_path="/api/oauth/state",
+                check_in_path="/api/user/checkin",  # 标准 newapi checkin 接口
+                check_in_status=True,  # 使用标准签到状态查询
+                user_info_path="/api/user/self",
+                topup_path="/api/user/topup",
+                api_user_key="new-api-user",
+                github_client_id=None,
+                github_auth_path=None,
+                linuxdo_client_id="rxyZeu4Wg8HNzwaG6YCj6OnFvap7ZfRU",
+                linuxdo_auth_path="/api/oauth/linuxdo",
+                aliyun_captcha=False,
+                bypass_method=None,
+            ),
             "kfc": ProviderConfig(
                 name="kfc",
                 origin="https://kfc-api.sxxe.net",
